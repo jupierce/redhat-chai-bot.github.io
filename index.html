@@ -72,6 +72,38 @@
       padding: 0.1rem 0.45rem;
       color: #bfdbfe;
     }
+    .links {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1.1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .links a.primary {
+      background: var(--accent);
+      color: #0b0d12;
+    }
+    .links a.primary:hover {
+      background: #a5e3ff;
+    }
+    .links a.secondary {
+      border: 1px solid var(--border);
+      color: var(--accent);
+    }
+    .links a.secondary:hover {
+      background: rgba(125, 211, 252, 0.08);
+      border-color: rgba(125, 211, 252, 0.5);
+    }
   </style>
 </head>
 <body>
@@ -79,7 +111,10 @@
     <p class="eyebrow">chai-bot</p>
     <h1>chai-bot is an agentic system for the software development lifecycle.</h1>
     <p>It helps engineering teams find answers, plan work, and move software delivery forward with context-aware AI support.</p>
-    <p class="support">Need help? Ask in <code>#ship-users</code> on Slack.</p>
+    <p class="support">Need help? Ask in <code>#chai-users</code> on Slack.</p>
+    <div class="links">
+      <a href="guide.html" class="primary">User Guide</a>
+    </div>
   </main>
 </body>
 </html>
